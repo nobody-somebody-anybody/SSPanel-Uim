@@ -19,7 +19,7 @@ final class NodeRemark extends AbstractMigration
     public function change(): void
     {
         $table = $this->table('node');
-        $table->addColumn('remark', 'text', array('comment' => '管理员备注', 'after' => 'status', 'default' => '无'))
+        $table->addColumn('remark', 'text', array('comment' => '管理员备注', 'after' => 'status', 'default' => ''))
             ->update();
     }
 }
